@@ -2,7 +2,7 @@
   <div class="comment_container">
     <div class="backgroundImg">
       <img
-        src="../../assets/images/banner7.png"
+        src="../../assets/images/banner4.jpg"
         alt=""
       />
     </div>

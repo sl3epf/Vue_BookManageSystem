@@ -2,15 +2,14 @@
   <div class="information_container">
     <div class="backgroundImg">
       <img
-        src="../../assets/images/banner6.png"
+        src="../../assets/images/banner5.jpg"
         alt="背景图片"
       />
     </div>
     <div class="information_header">
       <p>个人信息</p>
       <p>
-        <i class="el-icon-s-flag"></i> By reading we enrich the mind, by
-        conversation we polish it.
+        <i class="el-icon-s-flag"></i>通过阅读我们丰富头脑，通过交谈我们磨练头脑。
       </p>
     </div>
     <div class="information_banner">
@@ -35,9 +34,7 @@
         </div>
       </div>
       <div class="information_banner_right">
-        <el-button type="primary" class="changePWD" @click="showEditDialog"
-          >修改密码</el-button
-        >
+        <el-button type="primary" class="changePWD" @click="showEditDialog">修改密码</el-button>
       </div>
       <el-dialog
         title="修改密码"
@@ -166,7 +163,7 @@ export default {
 .backgroundImg {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 140%;
   img {
     width: 100%;
     height: 100%;
@@ -202,6 +199,7 @@ export default {
     // background-color: skyblue;
     text-align: left;
     line-height: 400px;
+    
   }
 }
 .banner_left_main {
