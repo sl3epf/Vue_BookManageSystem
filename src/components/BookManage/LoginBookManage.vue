@@ -5,7 +5,7 @@
       <!-- 头像区域 -->
       <div class="avatar_box">
         <img
-          src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5563/newLogo.png"
+          :src="imageUrl"
           alt=""
         />
       </div>
@@ -78,6 +78,19 @@
 export default {
   data() {
     return {
+      imageUrls:[
+        "https://robohash.org/19330234250",
+        "https://robohash.org/19330234251",
+        "https://robohash.org/19330234252",
+        "https://robohash.org/19330234253",
+        "https://robohash.org/19330234254",
+        "https://robohash.org/19330234255",
+        "https://robohash.org/19330234256",
+        "https://robohash.org/19330234257",
+        "https://robohash.org/19330234258",
+        "https://robohash.org/19330234259"
+      ],
+      imageUrl:"",
       //登录表单
       loginForm: {
         username: "bookadmin",
@@ -138,6 +151,11 @@ export default {
       this.$router.push('/loginadmin');
     }
   },
+  mounted() {
+      // 生成 0 到 9 之间的随机数
+        var randomNumber = Math.floor(Math.random() * 10);
+        this.imageUrl = this.imageUrls[randomNumber];
+    },
 };
 </script>
     
